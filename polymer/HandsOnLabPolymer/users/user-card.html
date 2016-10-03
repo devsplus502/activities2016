@@ -1,0 +1,43 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.6.1/lib/paper-card/paper-card.html">
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.6.1/lib/google-map/google-map.html">
+<dom-module id="user-card">
+
+  <template>
+
+    <style>   
+        .container
+        {
+          margin: 5px;
+          width: 100%
+        }
+        .big
+        {
+          width: 100%;
+          height: 250px;
+        }
+    </style>
+    <div class="container">
+      <paper-card heading="{{name}}" class="big">
+        <div class="card-content">
+        {{email}}
+        </div>
+        <google-map latitude="{{address.geo.lat}}" longitude="{{address.geo.lng}}" api-key="AIzaSyB-1hTzZJ-CbLl9dLIr-a7rD18a3pkyWyk"></google-map>
+      </paper-card>
+    </div>
+    
+  </template>
+
+  <script>
+  Polymer({
+
+    //AIzaSyB-1hTzZJ-CbLl9dLIr-a7rD18a3pkyWyk
+    is: 'user-card',
+    properties:{
+      name: String,
+      email: String,
+      address: Object
+    }
+  });
+  </script>
+
+</dom-module>

@@ -1,0 +1,26 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.6.1/lib/iron-ajax/iron-ajax.html">
+<link rel="import" href="./user-card.html">
+
+<dom-module id="user-list">
+<template>
+	<style>
+	</style>
+	<iron-ajax auto handle-as="json" url="https://jsonplaceholder.typicode.com/users" on-response="getUsers"></iron-ajax>
+	
+	<template is=dom-repeat items="{{users}}">
+		<user-card name="{{item.name}}" email="{{item.email}}" geo="{{item.geo}}"></user-card>
+		<div style="color: #eee; height: 20px;"></div>
+	</template>
+</template>
+
+<script>
+  //https://jsonplaceholder.typicode.com/users
+  Polymer({
+    is: 'user-list',
+    getUsers : function(data){
+    		this.users = data.detail.response;
+	}
+  });
+</script>
+
+  </dom-module>
