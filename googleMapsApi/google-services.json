@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "331511550915",
+    "firebase_url": "https://umgzacapa-8bd6f.firebaseio.com",
+    "project_id": "umgzacapa-8bd6f",
+    "storage_bucket": "umgzacapa-8bd6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331511550915:android:4815925b38675818",
+        "android_client_info": {
+          "package_name": "com.umg.zacapa.congreso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331511550915-p4897a9r5p97t3ouak727lvom1hed4l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZnlDPn7suVjT7p3fcm4C_tFvQgW6JUmY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
